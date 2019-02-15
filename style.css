@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+    --main-color:  black;
+    --hilight-color:  navy;
+}
+
+h1.homepage-header {
+    font-size: 3em;
+}
+
+h4 {
+    margin-bottom: 0px;
+    text-decoration: underline;
+}
+
+a {
+    color: var(--hilight-color);
+}
+
+.header {
+    background-color: var(--main-color);
+    color: white;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.content {
+    max-width: 700px;
+    margin-left: calc(50% - 350px);
+    margin-top: 30px;
+}
+
+.col {
+}
+
+.header-links {
+    padding: 30px;
+}
+
+.header-link {
+    color: white;
+    border: 2px solid white;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.header-link:hover {
+    background-color: white;
+    color: var(--main-color);
+}
+
+.tech {
+    background-color: var(--main-color);
+    color: white;
+    font-size: 0.8em;
+    padding: 3px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+td 
+{
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.posts {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    display: block;
+}
+
+.post-preview {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.post-header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.post-content {
+    max-width: 700px;
+    margin-left: calc(50% - 350px);
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 2em;
+}
+
+.post-title {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.post-body {
+    margin-top: 60px;
+}
+
+.projects {
+}
+
+.project-preview {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.code {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 1.2em;
+    overflow-x: scroll;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+@media (max-width:768px) {
+    body {
+    }
+
+    .content {
+        margin: 0px;
+        max-width: none;
+        width: calc(100% - 20px);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .post-content {
+        margin: 0px;
+        max-width: none;
+        width: calc(100% - 20px);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .post-title {
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-device-width:768px) and (orientation: portrait) {
+
+    body {
+        line-height: 4em;
+        font-size: 16px;
+    }
+
+    .content {
+        margin: 0px;
+        max-width: none;
+        width: calc(100% - 2em);
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 2.5em;
+    }
+
+    .header {
+        font-size: 4em;
+    }
+
+    h1.homepage-header {
+        font-size: 2em;
+        margin: 0px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .tagline {
+        font-size: 0.7em;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .header-links {
+        font-size: 0.7em;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .header-link {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 10px;
+        border-width: 4px;
+        border-radius: 10px;
+    }
+    
+    .post-content {
+        margin: 0px;
+        max-width: none;
+        width: calc(100% - 2em);
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 2.8em;
+    }
+    
+    .post-title {
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+    
+    .post-body {
+        margin-top: 1.5em;
+    }
+
+    .post-preview {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .project-preview {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .posts {
+        margin-top: 80px;
+    }
+}
