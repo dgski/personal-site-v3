@@ -98,8 +98,8 @@ td
 }
 
 .post-preview {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .post-header {
@@ -113,6 +113,7 @@ td
 .post-content {
     max-width: 700px;
     margin-left: calc(50% - 350px);
+    margin-bottom: 30px;
     margin-top: 30px;
     font-size: 18px;
     line-height: 2em;
@@ -131,8 +132,8 @@ td
 }
 
 .project-preview {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .code {
@@ -145,6 +146,20 @@ td
     overflow-x: scroll;
     margin-top: 10px;
     margin-bottom: 40px;
+}
+
+.all-previews-link {
+    display: inline-block;
+}
+
+.technology
+{
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    padding: 2px;
+    border-radius: 3px;
+    margin-right: 5px;
+    font-size: 11px;
 }
 
 @media (max-width:768px) {
@@ -250,5 +265,14 @@ td
 
     .posts {
         margin-top: 80px;
+    }
+
+    .technology
+    {
+        padding: 5px;
+        border-radius: 10px;
+        margin-right: 20px;
+        font-size: 0.9em;
+        border-width: 2px;
     }
 }
