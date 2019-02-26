@@ -34,9 +34,15 @@
         max-width: 700px;
         margin-left: calc(50% - 350px);
         margin-top: 30px;
+        display: flex;
     }
 
     .col {
+        flex: 1;
+    }
+
+    .col-spacer {
+        width: 50px;
     }
 
     .header-links {
@@ -93,8 +99,6 @@
     }
 
     .posts {
-        margin-bottom: 30px;
-        margin-top: 30px;
         display: block;
     }
 
@@ -170,6 +174,7 @@
             width: calc(100% - 20px);
             padding-left: 10px;
             padding-right: 10px;
+            display: block;
         }
 
         .post-content {
@@ -182,6 +187,11 @@
 
         .post-title {
             margin-top: 20px;
+        }
+
+        .posts {
+            margin-bottom: 30px;
+            margin-top: 30px;
         }
     }
 
@@ -200,6 +210,7 @@
             padding-left: 1em;
             padding-right: 1em;
             font-size: 2.5em;
+            display: block;
         }
 
         .header {
