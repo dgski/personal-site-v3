@@ -3,12 +3,14 @@
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
         line-height: 1.5em;
+        font-size: 15px;
         --main-color:  black;
-        --hilight-color:  navy;
+        --hilight-color:  #000056;
     }
 
     h1.homepage-header {
         font-size: 3em;
+        margin-top: 0px;
     }
 
     h4 {
@@ -21,18 +23,19 @@
     }
 
     .header {
-        background-color: var(--main-color);
+        background: linear-gradient(var(--main-color), var(--hilight-color));
         color: white;
         display: inline-block;
-        width: 100%;
-        text-align: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        width: calc(100% - calc(50% - 400px));
+        text-align: left;
+        padding-top: 85px;
+        padding-bottom: 80px;
+        padding-left: calc(50% - 400px);
     }
 
     .content {
-        max-width: 700px;
-        margin-left: calc(50% - 350px);
+        max-width: 800px;
+        margin-left: calc(50% - 400px);
         margin-top: 30px;
         display: flex;
     }
@@ -46,31 +49,20 @@
     }
 
     .header-links {
-        padding: 30px;
+        padding-top: 30px;
     }
 
     .header-link {
         color: white;
-        border: 2px solid white;
+        border: 1px solid white;
         padding: 5px;
-        margin-left: 5px;
-        margin-right: 5px;
-        border-radius: 5px;
+        margin-right: 10px;
         text-decoration: none;
     }
 
     .header-link:hover {
         background-color: white;
         color: var(--main-color);
-    }
-
-    .tech {
-        background-color: var(--main-color);
-        color: white;
-        font-size: 0.8em;
-        padding: 3px;
-        margin-right: 5px;
-        border-radius: 5px;
     }
 
     .project {
@@ -102,8 +94,8 @@
     }
 
     .post-preview {
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .post-header {
@@ -116,7 +108,7 @@
 
     .post-content {
         max-width: 700px;
-        margin-left: calc(50% - 350px);
+        margin-left: calc(50% - 400px);
         margin-bottom: 30px;
         margin-top: 30px;
         font-size: 18px;
@@ -133,8 +125,8 @@
     }
 
     .project-preview {
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .code {
@@ -158,13 +150,20 @@
         color: black;
         border: 1px solid black;
         padding: 2px;
-        border-radius: 3px;
         margin-right: 5px;
         font-size: 11px;
     }
 
-    @media (max-width:768px) {
+    @media (max-width:830px) {
         body {
+        }
+
+        .header {
+            width: calc(100% - 40px);
+            padding: 20px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            text-align: center;
         }
 
         .content {
@@ -195,7 +194,7 @@
     }
 
 
-    @media (max-device-width:768px) and (orientation: portrait) {
+    @media (max-device-width:830px) and (orientation: portrait) {
 
         body {
             line-height: 4em;
@@ -214,6 +213,11 @@
 
         .header {
             font-size: 4em;
+            width: calc(100% - 40px);
+            padding: 20px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            text-align: center;
         }
 
         h1.homepage-header {
