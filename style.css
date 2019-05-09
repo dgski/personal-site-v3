@@ -198,7 +198,6 @@
 
         body {
             line-height: 4em;
-            font-size: 16px;
         }
 
         .content {
@@ -244,7 +243,6 @@
             margin-right: 20px;
             padding: 10px;
             border-width: 4px;
-            border-radius: 10px;
         }
         
         .post-content {
@@ -282,7 +280,6 @@
         .technology
         {
             padding: 5px;
-            border-radius: 10px;
             margin-right: 20px;
             font-size: 0.9em;
             border-width: 2px;
