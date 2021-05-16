@@ -236,7 +236,8 @@
         }
 
         h1.homepage-header {
-            font-size: 2em;
+            font-size: 1.5em;
+            line-height: 1em;
             margin: 0px;
             padding-top: 50px;
             padding-bottom: 50px;
