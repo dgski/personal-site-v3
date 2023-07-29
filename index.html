@@ -1,69 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
 
-    <!doctype html>
-        <html>
-            <head>
-                <title> David Gorski</title>
-                <link rel="stylesheet" type="text/css" href="style.css">
-            </head>
-            <body>
-                <div class="header">
-                    <div><h1 class='homepage-header' > David Gorski</h1><em class='tagline' > Software Engineering, Modern C++, Python, Urbanism, Calisthenics, Running, Simplicity, Stoicism.</em><div class='header-links' ><a class='header-link' href='/files/david_gorski_resume.pdf' >Resume</a><a class='header-link' href='https://github.com/dgski' >Github</a><a class='header-link' href='https://www.linkedin.com/in/dgski' >LinkedIn</a><a class='header-link' href='https://twitter.com/thedavidgorski/' >Twitter</a></div></div>
-                </div>
-                <div class="content">
-                    <div class="col posts">
-                        <h2>Posts</h2>
-                        
-    <div class="post-preview">
-        <b><a href=" https://davidgorski.ca/posts/truncate-string-whitespace-compiletime-cpp"> Truncating String White-space At Compile Time in C++</a></b>
-        <br>
-         Leveraging constexpr for superior code clarity, performance, and logging.
-        <br>
-        <i>2021/04/17</i>
-    </div>
+<head>
 
-    <div class="post-preview">
-        <b><a href=" https://davidgorski.ca/posts/recursive-data-types-cpp"> Using C++17 to Create Composable, Recursive Data Types</a></b>
-        <br>
-         An Easy-To-Use Tree Data Structure in 12 Lines
-        <br>
-        <i>2021/03/21</i>
-    </div>
+  <!-- Page Information
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>David Gorski</title>
+  <meta name="description" content="https://littlelink.io">
+  <meta name="author" content="David Gorski">
 
-    <div class="post-preview">
-        <b><a href=" https://davidgorski.ca/posts/personal-backup-system"> A Simple Personal Data Backup Setup</a></b>
-        <br>
-         Getting Started With An Easy, Good-Enough Backup Solution
-        <br>
-        <i>2021/03/13</i>
-    </div>
-<a class='all-previews-link' href=' https://davidgorski.ca/posts' >All Posts...</a>
-                    </div>
-                    <div class="col-spacer"></div>
-                    <div class="col projects">
-                        <h2>Projects</h2>
-                        
-    <div class="project-preview">
-        <b><a href=" https://storystreamer.xantasoft.com/"> Story Streamer</a></b>
-        <br>
-         Interactive 'Stories UI' Content Aggregator.
-        <div class="technologies"><span class='technology' >Go</span><span class='technology' >React</span><span class='technology' >Cloud</span><span class='technology' >CI/CD</span></div>
-    </div>
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <div class="project-preview">
-        <b><a href=" https://plantogether.city"> Plan Together </a></b>
-        <br>
-         Plan Together is a Map-Based Collaborative Urban Planning Platform.
-        <div class="technologies"><span class='technology' >Go</span><span class='technology' >Svelte</span><span class='technology' >Cloud</span><span class='technology' >CI/CD</span></div>
-    </div>
 
-    <div class="project-preview">
-        <b><a href=" https://github.com/dgski/cryptocurrency"> Cryptocurrency</a></b>
-        <br>
-         Cryptocurrency implementation using a multi-module system design.
-        <div class="technologies"><span class='technology' >C++</span><span class='technology' >Micro-Services</span><span class='technology' >Sockets</span><span class='technology' >Concurrency</span></div>
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Themes:
+            Auto:   css/skeleton-auto.css
+            Light:  css/skeleton-light.css
+            Dark:   css/skeleton-dark.css
+     -->
+    <link rel="stylesheet" href="css/skeleton-dark.css">
+
+    <!-- Brand Styles -->
+    <link rel="stylesheet" href="css/brands.css">
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/littlelink.png">
+
+  <style>
+    body {
+      background: url(images/background4.jpeg) no-repeat center center fixed; 
+      background-size: cover;
+      background-attachment: fixed;
+      backdrop-filter: blur(20px);
+      min-height: 100vh;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="column" style="padding-top: 10%">
+
+        <!-- 
+
+          ## Getting Started with LittleLink
+
+          This page has been built with every pre-designed button available in LittleLink by default. You can rearrange and delete as needed.
+
+          You can add your own brand or others brands you may need in the `css/brands.css` file. 
+
+          You can add custom icons to `images/icons/...`. It is recommended to use a 24x24 .SVG.
+
+          Edit the "Your Image Here" section to add your own personal branding, like a picture of yourself or your brand logo!
+
+          Edit the "Title" section to change the page heading. You can use something like your name, your social handle, or your brand name.
+
+          Edit the "Short Bio" section tell users about yourself or your brand.
+
+        -->
+
+        <!-- Your Image Here -->
+        <!--<img src="images/profile.jpeg" class="avatar" alt="">-->
+
+        <!-- Title -->
+        <h1 role="heading">David Gorski</h1>
+
+        <!-- Short Bio -->
+        <p>
+          Software, Fitness and Overthinking. 
+        </p>
+
+        <!--
+
+          ## Breaking down <a> attributes:
+          
+          1.) class="button button-default" | The first "button" here is telling this <a> tag that it should make this element a button and applies the default styling in `css/brands.css`.
+          The second portion, button-default, is declaring the specific brand style you would like to apply. Here we're applying the "default" style and color.
+          If you want to make this button to use the brand colors for Discord, just change "button-default" to "button-discord". Brands are found in `css/brands.css`. You can always edit & add your own there.
+
+          2.) Replace the # in href="#" with the desired target URL for the button.
+
+          3.) target="_blank" | This attribute opens links in a new tab. Remove this attribute to prevent links from opening in a new tab.
+
+          4.) rel="noopener" | This attribute instructs the browser to navigate to the target resource without granting the new browsing context access to the document that opened it.
+          This is especially useful when opening untrusted links. https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/noopener
+
+          5.) role="button" | The button role identifies an element as a button to assistive technology such as screen readers.
+
+          ## Breaking down the <img> attributes:
+          
+          1.) class="icon" | This class is telling the <img> tag that it should use the styling for icons found in `css/brands.css`.
+
+          2.) src="images/icons/[icon-name].svg" | This defines the icon you would like to display from the 'images/icons/' folder. For example, you can change this to src="images/icons/discord.svg" to use the Discord icon.
+          Add your own 24x24 icons to the "icons" folder to reference them. We recommend providing a SVG.
+
+          3.) alt="" | Since the text at the end of the snippet, "..>[Button Text]</a><br>", explains what the button is, we use "alt=""" to nullify the icon annoucement from the accessibility tree. 
+          This can improve the experience for assistive technology users by hiding what is essentially duplicated
+        
+        <!-- LinkedIn -->
+        <a style="background-color: rgba(0, 0, 0, 0.5);" class="button button-linked" href="https://www.linkedin.com/in/dgski/" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/linkedin.svg" alt="">LinkedIn</a><br>
+
+        <!-- Generic Computer -->
+        <a style="background-color: rgba(0, 0, 0, 0.5);" class="button button-default" href="https://xantasoft.com/" target="_blank" rel="noopener" role="button"><img class="icon" alt="" src="images/icons/generic-computer.svg">Projects</a><br>
+
+        <!-- GitHub -->
+        <a style="background-color: rgba(0, 0, 0, 0.5);" class="button button-default" href="https://github.com/dgski" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/github.svg" alt="">GitHub</a><br>
+
+        <!-- Generic Email -->
+        <a style="background-color: rgba(0, 0, 0, 0.5);" class="button button-default" href="mailto:dg@davidgorski.ca" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/generic-email.svg" alt="">Email</a><br>
+
+        <!-- Tech Blog -->
+        <a style="background-color: rgba(0, 0, 0, 0.5);" class="button button-default" href="https://tech.davidgorski.ca" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/generic-code.svg" alt="">Tech Blog</a><br>
+
+        <!-- Personal Blog -->
+        <a style="background-color: rgba(0, 0, 0, 0.5);" style="background-color: black;" class="button button-default" href="https://blog.davidgorski.ca" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/generic-blog.svg" alt="">Personal Blog</a><br>
+
+        <!-- Twitter -->
+        <!--<a style="background-color: rgba(0, 0, 0, 0.5);" class="button button-twit" href="https://twitter.com/thedavidgorski" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/twitter.svg" alt="">Twitter</a><br>-->
+
+        <!-- Instagram -->
+        <a style="background-color: rgba(0, 0, 0, 0.5);" class="button button-default" href="https://www.instagram.com/thedavidgorski/" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/instagram.svg" alt="">Instagram</a><br>
+
+      </div>
     </div>
-<a class='all-previews-link' href=' https://davidgorski.ca/projects' >All Projects...</a>
-                    </div>
-                </div>
-            </body>
-        </html>
+  </div>
+
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>
